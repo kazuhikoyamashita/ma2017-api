@@ -12,7 +12,7 @@ const getSpa = function(emotion) {
     var options = {};
 
     l_area = getAreaCode(emotion);
-    query = { key: apiKey, l_area: l_area, count: '5', xml_ptn: '1' };
+    query = { key: apiKey, l_area: l_area, count: '5', xml_ptn: '0' };
     url = apiUrl + '?' + qs.stringify(query);
     options = {
         url: url,
