@@ -22,6 +22,7 @@ const getSpa = function(emotion) {
     return new Promise(function (resolve, reject) {
         request(options, function (error, response, body) {
             parseString(body, function (err, result) {
+
                 resolve(result);
             });
 
